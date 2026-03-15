@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cmd.exe /c \"where node.exe\")",
+      "Bash(cmd.exe /c \"where npm.cmd\")",
+      "mcp__paper__get_basic_info",
+      "mcp__paper__get_font_family_info",
+      "mcp__paper__create_artboard",
+      "mcp__paper__write_html",
+      "mcp__paper__get_screenshot",
+      "mcp__paper__get_node_info",
+      "mcp__paper__delete_nodes",
+      "Bash(npm install:*)"
+    ]
+  }
+}
