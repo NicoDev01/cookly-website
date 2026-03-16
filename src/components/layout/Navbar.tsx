@@ -38,7 +38,11 @@ export function Navbar() {
     <div className="fixed top-4 left-0 right-0 z-50 pointer-events-none flex justify-center" style={{ paddingLeft: 'clamp(1.5rem, 15vw, 14rem)', paddingRight: 'clamp(1.5rem, 15vw, 14rem)' }}>
       <nav className="pointer-events-auto bg-white/70 backdrop-blur-xl border border-white/40 shadow-sm rounded-full px-6 py-2 md:px-8 md:py-3 flex justify-between items-center w-full relative z-50">
         <div className="flex items-center">
-          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="focus:outline-none">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="focus:outline-none"
+            aria-label="Zur Startseite scrollen"
+          >
             <img src="/green-logo.webp" alt="Cookly" className="h-7 md:h-9 w-auto" width="1792" height="576" />
           </button>
         </div>
@@ -64,6 +68,9 @@ export function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center text-brand hover:bg-slate-200 transition-colors"
+            aria-label={isOpen ? 'Menü schließen' : 'Menü öffnen'}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
           >
             {isOpen ? <X size={20} className="text-brand" /> : <Menu size={20} className="text-brand" />}
           </button>
@@ -78,6 +85,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 10, scale: 1 }}
             exit={{ opacity: 0, y: -20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
+            id="mobile-menu"
             className="pointer-events-auto absolute top-full mt-2 w-full max-w-[calc(100vw-2rem)] bg-white/90 backdrop-blur-xl border border-white/40 shadow-xl rounded-[2rem] p-6 flex flex-col gap-4 md:hidden"
           >
             {navLinks.map(({ href, label }) => (

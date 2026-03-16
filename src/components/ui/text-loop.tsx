@@ -43,19 +43,29 @@ export function TextLoop({
   };
 
   return (
-    <div className={cn('relative inline-block whitespace-nowrap', className)}>
+    <span className={cn('relative inline-block whitespace-nowrap overflow-hidden', className)}>
+      {/* Invisible spacer: renders all items stacked to always reserve the width of the longest one */}
+      <span aria-hidden='true' className='invisible whitespace-nowrap'>
+        {items.reduce((longest, item) => {
+          const l = typeof item === 'object' && 'props' in item ? String((item as any).props?.children ?? '') : String(item);
+          const c = typeof longest === 'object' && 'props' in longest ? String((longest as any).props?.children ?? '') : String(longest);
+          return l.length >= c.length ? item : longest;
+        })}
+      </span>
+      {/* Animated text positioned absolutely over the spacer */}
       <AnimatePresence mode='popLayout' initial={false}>
-        <motion.div
+        <motion.span
           key={currentIndex}
           initial='initial'
           animate='animate'
           exit='exit'
           transition={transition}
           variants={variants || motionVariants}
+          style={{ display: 'inline-block', position: 'absolute', top: 0, left: 0, right: 0, textAlign: 'inherit' }}
         >
           {items[currentIndex]}
-        </motion.div>
+        </motion.span>
       </AnimatePresence>
-    </div>
+    </span>
   );
 }

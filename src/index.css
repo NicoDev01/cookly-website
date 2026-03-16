@@ -77,6 +77,7 @@ body {
   }
 }
 
+
 /* Hide scrollbar for clean app UI mockups */
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {

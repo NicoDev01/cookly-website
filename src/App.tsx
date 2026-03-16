@@ -13,14 +13,16 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-brand/30">
       <Navbar />
-      <Hero />
-      <Features />
-      <PhotoFeature />
-      <IngredientSearch />
-      <MealPlanner />
-      <ShoppingList />
-      <Pricing />
-      <DownloadCTA />
+      <main>
+        <Hero />
+        <Features />
+        <PhotoFeature />
+        <IngredientSearch />
+        <MealPlanner />
+        <ShoppingList />
+        <Pricing />
+        <DownloadCTA />
+      </main>
       <Footer />
     </div>
   );

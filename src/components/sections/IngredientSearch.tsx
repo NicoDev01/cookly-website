@@ -71,6 +71,8 @@ export function IngredientSearch() {
           {ingredients.map((ingredient, index) => (
             <span key={index} className={index >= 6 ? 'hidden lg:contents' : 'contents'}>
               <motion.button
+                type="button"
+                aria-label={`${ingredient} als Zutat auswählen`}
                 initial={{ opacity: 0, translateY: 16 }}
                 whileInView={{ opacity: 1, translateY: 0 }}
                 viewport={{ once: true }}

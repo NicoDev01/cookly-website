@@ -17,6 +17,7 @@ interface Props {
 const MotionButton: FC<Props> = ({ label, classes }) => {
   return (
     <button
+      type="button"
       className={cn(
         'bg-background group relative h-auto w-50 cursor-pointer rounded-full border-[none] p-1 outline-none',
         classes

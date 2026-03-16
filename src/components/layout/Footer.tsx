@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="bg-white border-t border-slate-100">
-      <div className="site-container py-12 lg:py-16">
+      <div className="site-container pt-12 pb-8 lg:pt-16 lg:pb-10">
 
         {/* Top: Logo + Links */}
         <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-16 mb-12">
@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-4 lg:max-w-xs">
             <img src="/green-logo.webp" alt="Cookly" className="h-8 w-auto self-start" width="1792" height="576" />
-            <p className="text-slate-500 text-sm leading-relaxed">
+            <p className="text-slate-600 text-sm leading-relaxed">
               Alle deine Rezepte. Ein Ort. Importiere, organisiere und teile deine Lieblingsrezepte
             </p>
             <a href="#" className="inline-block mt-2 hover:opacity-90 transition-opacity self-start">
@@ -26,31 +26,23 @@ export function Footer() {
           {/* Links */}
           <div className="grid grid-cols-2 gap-8 lg:gap-16">
             <div>
-              <h4 className="font-bold text-slate-900 mb-4 text-sm uppercase tracking-wide">Produkt</h4>
+              <h3 className="font-bold text-slate-900 mb-4 text-sm uppercase tracking-wide">Produkt</h3>
               <ul className="flex flex-col gap-2.5">
-                <li><a href="#features" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">Importieren</a></li>
-                <li><a href="#photo-feature" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">Digitalisieren</a></li>
-                <li><a href="#ingredient-search" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">Suchen</a></li>
-                <li><a href="#meal-planner" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">Wochenplan</a></li>
-                <li><a href="#shopping-list" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">Einkaufsliste</a></li>
-                <li><a href="#pricing" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">Preise</a></li>
+                <li><a href="#features" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">Importieren</a></li>
+                <li><a href="#photo-feature" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">Digitalisieren</a></li>
+                <li><a href="#ingredient-search" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">Suchen</a></li>
+                <li><a href="#meal-planner" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">Wochenplan</a></li>
+                <li><a href="#shopping-list" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">Einkaufsliste</a></li>
+                <li><a href="#pricing" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">Preise</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-slate-900 mb-4 text-sm uppercase tracking-wide">Kontakt</h4>
+              <h3 className="font-bold text-slate-900 mb-4 text-sm uppercase tracking-wide">Kontakt</h3>
               <ul className="flex flex-col gap-2.5">
-                <li><a href="mailto:support@cookly.app" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">support@cookly.app</a></li>
+                <li><a href="mailto:support@cookly.app" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">support@cookly.app</a></li>
               </ul>
             </div>
           </div>
-        </div>
-
-        {/* Divider */}
-        <div className="h-px bg-slate-100 mb-6" />
-
-        {/* Bottom */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-2 text-slate-400 text-sm">
-          <p>© {new Date().getFullYear()} Cookly. Alle Rechte vorbehalten.</p>
         </div>
 
       </div>

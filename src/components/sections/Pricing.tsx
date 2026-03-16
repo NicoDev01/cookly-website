@@ -157,9 +157,15 @@ export function Pricing() {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="flex justify-center mb-8"
         >
-          <div className="flex items-center justify-center rounded-full bg-slate-100 p-1 text-slate-600 w-full max-w-xs">
+          <div
+            role="group"
+            aria-label="Preisplan auswählen"
+            className="flex items-center justify-center rounded-full bg-slate-100 p-1 text-slate-600 w-full max-w-xs"
+          >
             <button
+              type="button"
               onClick={() => setPlan('free')}
+              aria-pressed={plan === 'free'}
               className={`flex-1 inline-flex items-center justify-center whitespace-nowrap rounded-full px-3 py-2.5 text-sm font-medium transition-all ${
                 plan === 'free' ? 'bg-white text-slate-900 shadow-md' : 'text-slate-600 hover:text-slate-900'
               }`}
@@ -167,7 +173,9 @@ export function Pricing() {
               Free
             </button>
             <button
+              type="button"
               onClick={() => setPlan('monthly')}
+              aria-pressed={plan === 'monthly'}
               className={`flex-1 inline-flex items-center justify-center whitespace-nowrap rounded-full px-3 py-2.5 text-sm font-medium transition-all ${
                 plan === 'monthly' ? 'bg-white text-slate-900 shadow-md' : 'text-slate-600 hover:text-slate-900'
               }`}
@@ -175,7 +183,9 @@ export function Pricing() {
               Monatlich
             </button>
             <button
+              type="button"
               onClick={() => setPlan('annual')}
+              aria-pressed={plan === 'annual'}
               className={`flex-1 inline-flex items-center justify-center whitespace-nowrap rounded-full px-3 py-2.5 text-sm font-medium transition-all ${
                 plan === 'annual' ? 'bg-white text-slate-900 shadow-md' : 'text-slate-600 hover:text-slate-900'
               }`}
