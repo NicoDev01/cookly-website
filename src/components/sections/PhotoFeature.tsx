@@ -86,9 +86,11 @@ export function PhotoFeature() {
           className="w-full lg:w-[50%]"
         >
           <img
-            src="/promo-foto.png"
+            src="/promo-foto.webp"
             alt="Rezepte fotografieren mit Cookly"
             className="w-full rounded-2xl"
+            width="800"
+            height="935"
           />
         </motion.div>
       </div>

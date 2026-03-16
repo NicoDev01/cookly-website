@@ -39,7 +39,7 @@ export function Navbar() {
       <nav className="pointer-events-auto bg-white/70 backdrop-blur-xl border border-white/40 shadow-sm rounded-full px-6 py-2 md:px-8 md:py-3 flex justify-between items-center w-full relative z-50">
         <div className="flex items-center">
           <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="focus:outline-none">
-            <img src="/green-logo.png" alt="Cookly" className="h-7 md:h-9 w-auto" />
+            <img src="/green-logo.webp" alt="Cookly" className="h-7 md:h-9 w-auto" width="1792" height="576" />
           </button>
         </div>
 

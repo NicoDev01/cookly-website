@@ -42,9 +42,11 @@ export function Features() {
             className="w-full lg:w-[50%]"
           >
             <img
-              src="/promo-social.png"
+              src="/promo-social.webp"
               alt="So einfach importierst du deine Lieblingsrezepte"
               className="w-full rounded-2xl"
+              width="923"
+              height="897"
             />
           </motion.div>
 

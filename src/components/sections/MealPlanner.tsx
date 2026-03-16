@@ -44,9 +44,11 @@ export function MealPlanner() {
           className="w-full lg:w-[50%]"
         >
           <img
-            src="/promo-fav-week.png"
+            src="/promo-fav-week.webp"
             alt="Wochenplan und Favoriten mit Cookly"
             className="w-full rounded-2xl"
+            width="1024"
+            height="1024"
           />
         </motion.div>
 

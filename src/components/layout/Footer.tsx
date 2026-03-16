@@ -8,7 +8,7 @@ export function Footer() {
 
           {/* Brand */}
           <div className="flex flex-col gap-4 lg:max-w-xs">
-            <img src="/green-logo.png" alt="Cookly" className="h-8 w-auto self-start" />
+            <img src="/green-logo.webp" alt="Cookly" className="h-8 w-auto self-start" width="1792" height="576" />
             <p className="text-slate-500 text-sm leading-relaxed">
               Alle deine Rezepte. Ein Ort. Importiere, organisiere und teile deine Lieblingsrezepte
             </p>
@@ -17,6 +17,8 @@ export function Footer() {
                 src="/GetItOnGooglePlay.png"
                 alt="Jetzt bei Google Play"
                 className="h-10 w-auto"
+                width="478"
+                height="142"
               />
             </a>
           </div>

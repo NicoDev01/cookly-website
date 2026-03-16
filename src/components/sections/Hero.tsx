@@ -4,9 +4,7 @@ import { TextLoop } from '../ui/text-loop';
 export function Hero() {
   return (
     <section className="relative pt-28 lg:pt-40 pb-12 lg:pb-20 bg-white">
-      {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand/20 rounded-full blur-[120px] -z-10"></div>
-
+      
       <div className="site-container flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,6 +44,8 @@ export function Hero() {
                 alt="Get it on Google Play"
                 style={{ height: 'clamp(3rem, 4vw, 4rem)' }}
                 className="w-auto"
+                width="478"
+                height="142"
               />
             </a>
           </div>
@@ -58,7 +58,14 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="w-full lg:w-[50%] relative z-10 flex justify-center"
         >
-          <img src="/Cookly-promo1.png" alt="Cookly App" className="w-full rounded-2xl" />
+          <img
+            src="/Cookly-promo1.webp"
+            alt="Cookly App"
+            className="w-full rounded-2xl"
+            width="992"
+            height="1072"
+            fetchPriority="high"
+          />
         </motion.div>
       </div>
     </section>

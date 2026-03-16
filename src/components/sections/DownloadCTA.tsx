@@ -25,11 +25,13 @@ export function DownloadCTA() {
           {/* Google Play Badge */}
           <div className="flex justify-center">
             <a href="#">
-              <img 
-                src="/GetItOnGooglePlay.png" 
-                alt="Jetzt bei Google Play" 
+              <img
+                src="/GetItOnGooglePlay.png"
+                alt="Jetzt bei Google Play"
                 style={{ height: 'clamp(3rem, 4vw, 4rem)' }}
                 className="w-auto hover:opacity-90 transition-opacity"
+                width="478"
+                height="142"
               />
             </a>
           </div>

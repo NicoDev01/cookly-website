@@ -44,9 +44,11 @@ export function ShoppingList() {
           className="w-full lg:w-[50%]"
         >
           <img
-            src="/promo-einkaufsliste.png"
+            src="/promo-einkaufsliste.webp"
             alt="Einkaufsliste mit Cookly"
             className="w-full rounded-2xl"
+            width="1080"
+            height="1920"
           />
         </motion.div>
 

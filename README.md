@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/green-logo.png" alt="Cookly Logo" height="60" />
+  <img src="public/green-logo.webp" alt="Cookly Logo" height="60" />
   <h1>Cookly – Landing Page</h1>
   <p>Alle deine Rezepte. Ein Ort.</p>
 
