@@ -58,13 +58,15 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="w-full lg:w-[50%] relative z-10 flex justify-center"
         >
-          <img
-            src="/Cookly-promo1.webp"
-            alt="Cookly App"
-            className="w-full rounded-2xl"
+          <video
+            src="/promo-video.mp4"
+            className="w-full rounded-2xl mix-blend-multiply brightness-[1.05] contrast-[1.05] scale-105 lg:scale-110"
             width="992"
             height="1072"
-            fetchPriority="high"
+            autoPlay
+            loop
+            muted
+            playsInline
           />
         </motion.div>
       </div>
