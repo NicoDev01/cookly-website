@@ -10,6 +10,7 @@ const navLinks = [
   { href: '#meal-planner', label: 'Wochenplan' },
   { href: '#shopping-list', label: 'Einkaufsliste' },
   { href: '#pricing', label: 'Preise' },
+  { href: '#faq', label: 'FAQ' },
 ];
 
 export function Navbar() {

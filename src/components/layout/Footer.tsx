@@ -34,6 +34,7 @@ export function Footer() {
                 <li><a href="#meal-planner" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">Wochenplan</a></li>
                 <li><a href="#shopping-list" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">Einkaufsliste</a></li>
                 <li><a href="#pricing" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">Preise</a></li>
+                <li><a href="#faq" className="text-slate-600 hover:text-slate-900 transition-colors text-sm">FAQ</a></li>
               </ul>
             </div>
             <div>
@@ -45,7 +46,7 @@ export function Footer() {
           </div>
         </div>
 
-      </div>
+</div>
     </footer>
   );
 }

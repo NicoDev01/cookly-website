@@ -3,16 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cookly – Deine KI-gestützte Rezept-App für Android</title>
+    <meta name="theme-color" content="#b2c8ba" />
+    <title>Cookly – Alle deine Rezepte. Ein Ort.</title>
     <meta name="description" content="Rezepte von Instagram, Facebook & Websites in Sekunden speichern. KI-Foto-Scan, Wochenplaner & automatische Einkaufsliste. Jetzt kostenlos herunterladen." />
     <meta name="keywords" content="Rezept App, Kochbuch App, Rezepte speichern, Instagram Rezepte importieren, KI Rezepte scannen, Wochenplaner Essen, Einkaufsliste App" />
-    <link rel="icon" type="image/png/webp" href="/icon-cookly.webp" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://cookly.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cookly.app/" />
+    <meta property="og:title" content="Cookly – Alle deine Rezepte. Ein Ort." />
+    <meta property="og:description" content="Rezepte von Instagram, Facebook & Websites in Sekunden speichern. KI-Foto-Scan, Wochenplaner & automatische Einkaufsliste. Jetzt kostenlos herunterladen." />
+    <meta property="og:image" content="https://cookly.app/og-image.webp" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="Cookly" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cookly – Alle deine Rezepte. Ein Ort." />
+    <meta name="twitter:description" content="Rezepte von Instagram, Facebook & Websites in Sekunden speichern. KI-Foto-Scan, Wochenplaner & automatische Einkaufsliste." />
+    <meta name="twitter:image" content="https://cookly.app/og-image.webp" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/webp" href="/icon-cookly.webp" />
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Cookly",
+          "url": "https://cookly.app",
+          "description": "Rezept-Management-App zum Importieren, Organisieren und Verwalten von Rezepten aus Instagram, Facebook, TikTok, Websites und Fotos.",
+          "applicationCategory": "FoodApplication",
+          "operatingSystem": "Android",
+          "offers": [
+            {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR",
+              "name": "Basic"
+            },
+            {
+              "@type": "Offer",
+              "price": "3.99",
+              "priceCurrency": "EUR",
+              "name": "Premium Monatlich"
+            },
+            {
+              "@type": "Offer",
+              "price": "34.99",
+              "priceCurrency": "EUR",
+              "name": "Premium Jährlich"
+            }
+          ],
+          "installUrl": "https://play.google.com/store/apps/details?id=app.cookly",
+          "image": "https://cookly.app/og-image.webp",
+          "inLanguage": "de"
+        },
+        {
+          "@type": "WebSite",
+          "name": "Cookly",
+          "url": "https://cookly.app",
+          "description": "Alle deine Rezepte. Ein Ort.",
+          "inLanguage": "de"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Cookly",
+          "url": "https://cookly.app",
+          "description": "Rezept-Management-App zum Importieren, Organisieren und Verwalten von Rezepten.",
+          "applicationCategory": "FoodApplication",
+          "operatingSystem": "Android, iOS, Web",
+          "inLanguage": "de"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ist Cookly wirklich kostenlos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, der Basic-Plan ist dauerhaft kostenlos. Du kannst bis zu 100 Rezepte erstellen, 100 Links importieren und 100 KI-Foto-Scans nutzen – ohne Kreditkarte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Quellen kann ich importieren?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Du kannst Rezepte von Instagram, Facebook, TikTok, beliebigen Rezept-Websites, aus Fotos von Kochbüchern und handschriftlichen Rezeptkarten importieren."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funktioniert Cookly ohne Internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, gespeicherte Rezepte sind auch offline verfügbar. Neue Importe und KI-Scans benötigen eine Internetverbindung."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Auf welchen Geräten läuft Cookly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cookly ist für Android verfügbar und kann über Google Play kostenlos heruntergeladen werden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie kündige ich Premium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Premium kann jederzeit über den Google Play Store gekündigt werden. Es gibt keine Mindestlaufzeit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie funktioniert der KI-Foto-Scan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mache ein Foto deines Rezepts – aus einem Kochbuch, einer Zeitschrift oder einer handgeschriebenen Karte. Cookly erkennt den Text automatisch und wandelt ihn in ein strukturiertes digitales Rezept um."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Font preloads -->
     <link rel="preload" href="/fonts/static/Fredoka-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/static/Fredoka-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/static/Fredoka-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/static/Fredoka-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
+    <!-- Statischer SEO-Inhalt – visuell versteckt, für Crawler sichtbar -->
+    <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Cookly – Alle deine Rezepte. Ein Ort.</h1>
+    <p style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Importiere deine Lieblingsrezepte von Instagram, Facebook, TikTok, Rezept-Websites, Fotos und Kochbüchern. KI-Foto-Scan, Wochenplaner und automatische Einkaufsliste. Kostenlos herunterladen auf Google Play.</p>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

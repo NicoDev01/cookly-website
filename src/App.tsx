@@ -9,6 +9,7 @@ import { IngredientSearch } from './components/sections/IngredientSearch';
 import { MealPlanner } from './components/sections/MealPlanner';
 import { ShoppingList } from './components/sections/ShoppingList';
 import { Pricing } from './components/sections/Pricing';
+import { FAQ } from './components/sections/FAQ';
 import { DownloadCTA } from './components/sections/DownloadCTA';
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <MealPlanner />
         <ShoppingList />
         <Pricing />
+        <FAQ />
         <DownloadCTA />
       </main>
       <Footer />

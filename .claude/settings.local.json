@@ -11,7 +11,8 @@
       "mcp__paper__get_screenshot",
       "mcp__paper__get_node_info",
       "mcp__paper__delete_nodes",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npx shadcn:*)"
     ]
   }
 }

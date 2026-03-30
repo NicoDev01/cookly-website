@@ -1,0 +1,28 @@
+# Cookly
+
+> Cookly ist eine Rezept-Management-App für Android. Nutzer können Rezepte von Instagram, Facebook, TikTok, Websites, Fotos und Kochbüchern importieren, organisieren und verwalten.
+
+## Produkt
+
+Cookly ermöglicht es, Rezepte aus verschiedenen Quellen an einem Ort zu sammeln:
+
+- **Import**: Rezepte per Share-Funktion von Instagram, Facebook, TikTok und beliebigen Rezept-Websites importieren
+- **Foto-Scan**: Rezepte aus Kochbüchern oder handschriftlichen Karten per KI-Foto-Scan digitalisieren
+- **Zutatensuche**: Rezepte anhand vorhandener Zutaten finden
+- **Wochenplaner**: Mahlzeiten für die Woche planen
+- **Einkaufsliste**: Automatisch kategorisierte Einkaufslisten aus Rezepten erstellen
+- **Sammlungen**: Rezepte in eigenen Sammlungen organisieren
+
+## Preise
+
+- **Basic (kostenlos)**: Bis zu 100 Rezepte, 100 Imports, 100 KI-Foto-Scans, unbegrenzt Wochenpläne und Einkaufslisten
+- **Premium (3,99 €/Monat oder 34,99 €/Jahr)**: Unbegrenzt Rezepte, Imports und KI-Scans
+
+## Verfügbarkeit
+
+- Android (Google Play)
+- Website: https://cookly.app
+
+## Kontakt
+
+- Support: support@cookly.app
